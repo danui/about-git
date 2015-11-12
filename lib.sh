@@ -45,6 +45,10 @@ function merge { # branch
     git merge --no-ff --no-edit $1
 }
 
+function tag { # tag
+    git tag $1
+}
+
 function log { # msg...
     local opts=""
     opts="$opts --all"
